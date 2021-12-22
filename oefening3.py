@@ -12,7 +12,7 @@ lijst = []
 for i in range(q.maxsize):
     for (key,value) in q.get().items():
         print(f'Welke dier is {key} in het Nederlands')
-        antwoord_gebruiker = input()
+        antwoord_gebruiker = input().lower()
 
         if antwoord_gebruiker == value:
             lijst.append(f'Vraag {i+1}: juist')
